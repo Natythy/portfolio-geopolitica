@@ -14,6 +14,13 @@ blocos econômicos e eventos históricos moldam o desenvolvimento humano.
 
 @st.cache_data
 def carregar_dados():
+    """
+    Carrega o dataset Gapminder e realiza a engenharia de atributos 
+    para classificar os países em blocos econômicos específicos.
+    
+    Returns:
+        pd.DataFrame: DataFrame processado com a coluna 'Bloco_Economico'.
+    """
     df = px.data.gapminder()
 
     g7 = [
@@ -30,6 +37,16 @@ def carregar_dados():
     tigres = ["Hong Kong, China", "Singapore", "Korea, Rep.", "Taiwan"]
 
     def classificar_bloco(pais, continente):
+        """
+        Lógica de categorização de países baseada em alianças políticas e econômicas.
+        
+        Args:
+            pais (str): Nome do país.
+            continente (str): Continente do país.
+            
+        Returns:
+            str: O nome do bloco econômico ou 'Outros'.
+        """
         if pais in g7:
             return "G7"
         elif pais in brics:
@@ -173,3 +190,17 @@ fig_mapa = px.choropleth(
 fig_mapa.update_layout(margin={"r": 0, "t": 40, "l": 0, "b": 0})
 
 st.plotly_chart(fig_mapa, use_container_width=True)
+
+
+st.sidebar.divider()
+st.sidebar.subheader("Sobre o Projeto")
+st.sidebar.info("""
+Este Laboratório foi desenvolvido como um projeto de portfólio que une 
+**Ciência de Dados** e **Análise de Relações Internacionais**.
+
+**Autora:** Nathaly Eduarda
+**Objetivo:** Estudo prático de como eventos geopolíticos impactam indicadores macroeconômicos globais.
+"""
+)
+
+st.sidebar.caption("Dados fornecidos pela Fundação Gapminder.")
