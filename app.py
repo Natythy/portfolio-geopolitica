@@ -123,18 +123,18 @@ if not df_filtrado.empty:
         st.subheader("📚 Notas Geopolíticas")
         st.write("Entenda o impacto histórico nas curvas de crescimento:")
 
-        with st.expander("🔍 1973: O Choque do Petróleo e a Vulnerabilidade do G7"):
-            st.write("""
-                    **Contexto Geopolítico:** A crise ocorreu no contexto da Guerra do Yom Kippur. Com os EUA apoiando militarmente Israel, 
-                        e a URSS apoiando Egito e Síria na dinâmica da Guerra Fria, os países árabes exportadores de petróleo (liderados pela Arábia Saudita) 
-                        impuseram um embargo aos aliados de Israel. Eles perceberam que o petróleo era uma vantagem estratégica e uma ferramenta de pressão, 
-                        inclusive para a libertação do povo palestino.
+        # with st.expander("🔍 1973: O Choque do Petróleo e a Vulnerabilidade do G7"):
+        #     st.write("""
+        #             **Contexto Geopolítico:** A crise ocorreu no contexto da Guerra do Yom Kippur. Com os EUA apoiando militarmente Israel, 
+        #                 e a URSS apoiando Egito e Síria na dinâmica da Guerra Fria, os países árabes exportadores de petróleo (liderados pela Arábia Saudita) 
+        #                 impuseram um embargo aos aliados de Israel. Eles perceberam que o petróleo era uma vantagem estratégica e uma ferramenta de pressão, 
+        #                 inclusive para a libertação do povo palestino.
              
-                    **Análise de Dados:** O embargo causou um choque brutal, aumentando o valor do barril de cerca de 2,90 para 11 dólares. 
-                        Ao analisar a evolução do **G7** no gráfico, compreendemos o tamanho desse impacto: o evento expôs a vulnerabilidade extrema 
-                        das maiores potências ocidentais, cuja riqueza era altamente dependente dessa matriz energética. 
-                        E influênciando o fortalecimento da Agência Internacional de Energia (AIE)
-        """)
+        #             **Análise de Dados:** O embargo causou um choque brutal, aumentando o valor do barril de cerca de 2,90 para 11 dólares. 
+        #                 Ao analisar a evolução do **G7** no gráfico, compreendemos o tamanho desse impacto: o evento expôs a vulnerabilidade extrema 
+        #                 das maiores potências ocidentais, cuja riqueza era altamente dependente dessa matriz energética. 
+        #                 E influênciando o fortalecimento da Agência Internacional de Energia (AIE)
+        # """)
 
         with st.expander(
             "🤝 1991: Redemocratização e a Integração Regional (Mercosul)"
