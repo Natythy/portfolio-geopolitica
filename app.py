@@ -115,7 +115,7 @@ if not df_filtrado.empty:
         )
 
         # Ajuste da velocidade da animação
-        fig.layout.uodatemenus[0].buttons[0].args[1]["frame"]["duration"] = 800
+        fig.layout.updatemenus[0].buttons[0].args[1]["frame"]["duration"] = 800
         
         st.plotly_chart(fig, use_container_width=True)
 
